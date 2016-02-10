@@ -1,0 +1,45 @@
+FOR DRAWING 1:
+void setup(){
+  size (500,500);
+  background (255);
+}
+void draw(){
+  int x=10;
+ while (x<480){
+  rect(10,10,5,5);
+  fill(0);
+  x=x+10;
+
+}
+}
+
+I expected the code to draw a row of black squares
+The code drew only 1 square in the upper right corner
+I realized that I did not put x into the equation so it isnt creating any new squares or adding x
+I then replaced the x1 position (10) with "x"! 
+This worked! I created a row of squares. 
+These squares are a little small, I want to make them bigger so im going to increase their size. 
+ while (x<480){
+  rect(x,10,10,10);
+  fill(0);
+  x=x+10;
+When I did this it created a black line instead
+I think this is because I now need to increase the spacing between it so I think I need to increase x and the x1 and y1
+This worked! now they are bigger and evenly spaced again.
+I now need to create a grid of the squares. I think I need to add another while statement. 
+
+void draw(){
+  int y=10;
+  int x=10;
+ while (x<480){
+  rect(x,20,10,10);
+  fill(0);
+  x=x+20;
+while (y<480){
+  rect (x,y,10,10);
+  fill(0);
+  x=x+20;
+}
+}
+}
+I put in this code and all of my squares dissapeared. 
