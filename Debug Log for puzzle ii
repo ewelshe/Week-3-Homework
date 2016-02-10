@@ -43,3 +43,25 @@ while (y<480){
 }
 }
 I put in this code and all of my squares dissapeared. 
+I then realized I put x instead of y in the last line. It then created a strange line of rectangles on the side
+I think I need to change the equation for y
+I then changed the y int to 20 so it starts below the first row
+Now I need to make it repeat so it creates a grid.
+void setup(){
+  size (500,500);
+  background (255);
+}
+void draw(){
+  int y=20;
+  int x=10;
+ while (x<480){
+  rect(x,20,10,10);
+  fill(0);
+  x=x+20;
+ }
+while (y<480){
+  rect (10,y,10,10);
+  fill(0);
+  y=y+20;
+}
+}
