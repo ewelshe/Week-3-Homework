@@ -1,18 +1,18 @@
 void setup(){
-  size(400,400);
-  background(0);
-}
-
-void draw(){
+  size (500,500);
+  background (255);
   noStroke();
-  int circle = 20;
-  while(circle<width-16){
-    int circley = 20;
-    while (circley<height-16) {
-      ellipse(circle,circley,15,15);
-      circley=circley + 20;
+  colorMode (HSB, 100);
+int x=10;
+  while(x<480){
+     int y=20;
+     while (y<480){
+  fill(random(100), random(100), (100));
+       ellipse (x,y,17,17);
+        y=y+20;
     }
-    circle=circle+20;
-    
+       x=x+20;
+
   }
+
 }
