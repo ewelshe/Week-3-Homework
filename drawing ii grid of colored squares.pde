@@ -1,17 +1,4 @@
 FOR DRAWING 1:
-void setup(){
-  size (500,500);
-  background (255);
-}
-void draw(){
-  int x=10;
- while (x<480){
-  rect(10,10,5,5);
-  fill(0);
-  x=x+10;
-
-}
-}
 
 I expected the code to draw a row of black squares
 The code drew only 1 square in the upper right corner
