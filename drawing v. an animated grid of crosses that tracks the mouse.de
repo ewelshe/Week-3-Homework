@@ -1,0 +1,33 @@
+int hori = 1;
+int verti = 12;
+
+
+void setup() {
+  size (700, 700);
+  stroke (0);
+}
+void draw() { 
+ stroke(0);
+  colorMode(RGB,255,255,255,100);
+  background (255);
+  for (int i=0; i<20; i++) {
+    int x = verti + (i*34);
+    for (int j=0; j<20; j++) {
+      int y = verti + (j*34);
+      line(x+10, y, x+10, y+20);
+      line(x, y+10, x+20, y+10);
+    }
+  }
+  noStroke();
+  ellipse(mouseX, mouseY, 100, 100);  
+  fill(255,255,255,75);
+  
+}
+
+// i needed to put the void draw underneath the setup not before. now there are mulitple circles
+// i need to change the opacity and make it one circle instead of it creating many new circles
+// I tried to put the color mode before everything but it changed the entire canvas so I need to move it to only the ellipse and I also need to make it opaque
+//I made it a single circle by including the background into void draw. now there is only 1 circle.
+// I added the color mode in draw to include opactiy. I then added a fill after the ellipse and changed the opactiy.
+//I couldnt get rid of the stroke because i put noStroke in the draw function
+//I then tried to put it right before the ellipse and then the stroke dissapeared!!
