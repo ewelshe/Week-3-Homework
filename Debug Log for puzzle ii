@@ -72,6 +72,8 @@ I needed to combine the x and y into one rect function.
 Once I put x and y together it worked!
 I now need to put color.I put the random fill into the draw function and it keeps blinking because it is running everytime. 
 So I need to put it in the setup i think. 
+FINAL CODE
+
 void setup(){
   size (500,500);
   background (255);
