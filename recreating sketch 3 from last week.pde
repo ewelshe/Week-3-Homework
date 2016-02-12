@@ -16,3 +16,5 @@ int x=10;
   }
 
 }
+//For recreating the colored grid of circles from last week, all I did was take the grid of saures from
+//this week and replaced the rectangels with ellipses and it worked the first time i tried it!!!!
